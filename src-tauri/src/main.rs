@@ -3,9 +3,9 @@
 
 use chrono::{DateTime, Utc};
 #[tauri::command]
-fn countdown() -> String {
+fn countdown(target_date: &str) -> String {
     let now: DateTime<Utc> = Utc::now();
-    let target_date = "2024-07-05T13:00:00Z".parse::<DateTime<Utc>>().unwrap();
+    let target_date = target_date.parse::<DateTime<Utc>>().unwrap();
     if now < target_date {
         let duration = target_date - now;
         let days = duration.num_days();

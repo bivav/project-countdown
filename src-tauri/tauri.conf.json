@@ -20,8 +20,8 @@
     "windows": [
       {
         "title": "Dissertation Countdown",
-        "width": 500,
-        "height": 250,
+        "width": 550,
+        "height": 300,
         "resizable": true,
         "fullscreen": false,
         "transparent": true,

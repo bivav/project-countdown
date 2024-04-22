@@ -6,7 +6,7 @@ import Countdown from "./components/Countdown.vue";
 
 <template>
     <div class="container">
-        <h2>Welcome to Countdown hell!</h2>
+        <h2>Dissertation Countdown Hell!</h2>
         <Countdown />
     </div>
 </template>
