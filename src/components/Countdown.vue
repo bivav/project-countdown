@@ -17,9 +17,9 @@
 import { ref, onMounted, onUnmounted, computed } from "vue";
 import { invoke } from "@tauri-apps/api/tauri";
 
-const defaultDateValue = "2024-07-05T13:00"; // Default date value in ISO 8601 format
-const targetDate = ref(defaultDateValue); // Store the target date
-const remainingTime = ref(""); // Store the remaining time
+const defaultDateValue = "2024-07-07T12:00"; // Default date value
+const targetDate = ref(defaultDateValue);
+const remainingTime = ref("");
 
 const formattedTargetDate = computed(() => {
     const date = new Date(targetDate.value);
